@@ -1,0 +1,127 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: normal 100%/1.3 Ubuntu, sans-serif;
+
+*, *::before, *::after {
+  box-sizing: inherit;
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #18294f;
+  text-align: center;
+  color: #fff;
+}
+
+nav a {
+
+  color: #6c8fe0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
+}
+
+nav ul {
+  padding: .3em 0 .5em;
+  padding-top: 0;
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+  padding: .5em .75em;
+}
+
+li {
+  display: block;
+  padding: .5em .75em;
+  text-align: left;
+}
+
+@media only screen and (min-width: 25em) {
+
+  ul {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 50%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    width: 25%;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    transform: translateX(70%);
+  }
+
+  ul {
+    display: flex;
+    align-items: flex-end;
+  }
+
+    width: auto;
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+}
